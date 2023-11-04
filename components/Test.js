@@ -1,7 +1,7 @@
 import { Clash } from "@/app/layout";
 export const Test = () => {
   return (
-    <mian className="mt-8 max-w-10xl">
+    <mian className="mt-12 max-w-10xl">
       <div className="flex items-center justify-center flex-col">
         <div className="flex gap-2 items-center justify-center font-semibold">
           <h1>Trusted By 2000+ Clients</h1>

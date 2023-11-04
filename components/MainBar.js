@@ -4,7 +4,7 @@ export const MainBar = () => {
     <mian className="mt-8 max-w-10xl">
       <div className="flex items-center justify-center">
         <h1
-          className={`${Clash.className} text-2xl sm:text-4xl mt-4 text-center pb-6`}
+          className={`${Clash.className} text-2xl sm:text-4xl mt-4 text-center pb-6 mb-4`}
         >
           NEXTERP Has The Ability To Serve <br />
           Any
