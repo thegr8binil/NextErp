@@ -41,7 +41,7 @@ export const Test = () => {
           What Our <span className="bg-orange-100 p-1">Client</span> Think About
           Us?
         </h1>
-    <img src="call.png" alt="test" className="max-w-8xl" />
+    <img src="call.png" alt="test" className="max-w-8xl w-screen" />
       </div>
     </mian>
   );
