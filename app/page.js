@@ -1,7 +1,6 @@
-import Image from 'next/image'
-
+import { Clash } from "./layout"
 export default function Home() {
   return (
-    <div className='w-screen h-screen '> Hello</div>
+    <div className={`${Clash.className} w-scr`}>Hello</div>
   )
 }
