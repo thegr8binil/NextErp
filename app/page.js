@@ -1,6 +1,11 @@
+import NavBar from "@/components/NavBar"
+import HeroSection from "@/components/HeroSection"
 import { Clash } from "./layout"
 export default function Home() {
   return (
-    <div className={`${Clash.className} w-scr`}>Hello</div>
+    <main className="flex flex-col justify-center items-center">
+    <NavBar/>
+    <HeroSection/>
+    </main>
   )
 }
