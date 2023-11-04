@@ -12,7 +12,7 @@ export const MainBar = () => {
         </h1>
       </div>
       <div className="flex flex-col gap-3 lg:flex-row lg:gap-0">
-        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
+        <div className=" bg-white flex flex-1 flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
           <div className="flex gap-3  rounded-3xl mt-3">
             <img
               src="q.png"
@@ -30,7 +30,7 @@ export const MainBar = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
+        <div className=" bg-white flex flex-1 flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
           <div className="flex gap-3  rounded-3xl mt-3">
             <img
               src="w.png"
@@ -47,7 +47,7 @@ export const MainBar = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
+        <div className=" bg-white flex flex-1 flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
           <div className="flex gap-3  rounded-3xl mt-3">
             <img
               src="e.png"
@@ -67,8 +67,8 @@ export const MainBar = () => {
         </div>
       </div>
       <div className="flex flex-col gap-3 lg:flex-row lg:gap-0 mt-3">
-        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
-          <div className="flex gap-3  rounded-3xl mt-3">
+        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row flex-1">
+          <div className="flex gap-3 flex-1 rounded-3xl mt-3">
             <img
               src="r.png"
               alt="hero"
@@ -82,8 +82,8 @@ export const MainBar = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
-          <div className="flex gap-3  rounded-3xl mt-3">
+        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row flex-1">
+          <div className="flex gap-3 flex-1  rounded-3xl mt-3">
             <img
               src="t.png"
               alt="hero"
@@ -98,8 +98,8 @@ export const MainBar = () => {
             </div>
           </div>
         </div>
-        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
-          <div className="flex gap-3  rounded-3xl mt-3">
+        <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row flex-1">
+          <div className="flex gap-3 flex-1  rounded-3xl mt-3">
             <img
               src="y.png"
               alt="hero"
