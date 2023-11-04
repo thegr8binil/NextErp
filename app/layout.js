@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
         style={{
           backgroundImage: 'url("/back.png")',
           backgroundRepeat: "no-repeat",
-          backgroundSize: "100% auto",
+          backgroundSize: "auto",
         }}
       >
         {children}
