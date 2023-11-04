@@ -1,4 +1,5 @@
 import Modal from "@/components/Modal";
+import { Clash } from "@/app/layout";
 export default function HeroSection() {
   return (
     <main className="max-w-12xl relative">
@@ -16,10 +17,17 @@ export default function HeroSection() {
             operations, all in one comprehensive platform
           </h1>
           <div className="flex items-center justify-start text-lg font-normal mt-2 ">
-            <div></div>
-            <Modal buttonText="Try free demo" />
+            <Modal buttonText="Try Free Demo" />
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center flex-col">
+        <img
+          src="Person.png"
+          alt="hero-bg"
+          className="px-10 "
+        />
+        <h1 className={`${Clash.className} text-xl sm:text-3xl mt-4`}>One <span className="bg-orange-100 p-1">Platform</span> For Any Business</h1>
       </div>
     </main>
   );

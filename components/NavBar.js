@@ -59,7 +59,7 @@ const navBar = () => {
         <h1 className={`${Orb.className} font-semibold`}>NEXTERP</h1>
       </div>
       <div>
-        <Modal buttonText="Request a Demo" />
+        <Modal buttonText="Contact Us" />
       </div>
     </main>
   );
