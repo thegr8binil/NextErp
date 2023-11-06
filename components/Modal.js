@@ -165,7 +165,7 @@ function Modal({ buttonText }) {
 
                   <button
                     type="submit"
-                    className="w-full text-blue-50 bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-orange-400-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    className="w-full text-blue-50 bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-orange-400-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" onClick={toggleModal}
                   >
                     Get Our Demo
                   </button>
