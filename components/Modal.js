@@ -11,19 +11,20 @@ function Modal({ buttonText }) {
   const [companyName, setCompanyName] = useState("");
   const [email, setEmail] = useState("");
   const [mobileNo, setMobileNo] = useState("");
+  const [productName , setProductName] = useState("NextERP Demo")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  console.log("HELOOOO")
     const formData = {
-      name,
+      userName: name,
       companyName,
       email,
-      mobileNo,
+      mobileNumber: mobileNo,
+      productName,
     };
 
     try {
-      const response = await fetch('https://ajcjewel.com:5000/api/user/login', {
+      const response = await fetch('https://restaurentapi.nexteons.com/api/Enquiry/CreateEnquiry', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,6 +41,8 @@ function Modal({ buttonText }) {
       console.log("try again",error)
     }
   };
+  
+
   
 
   return (
