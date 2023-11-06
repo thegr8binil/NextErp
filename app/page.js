@@ -5,6 +5,7 @@ import { Bar } from "@/components/Bar"
 import MFeatures from "@/components/MFeatures"
 import { MainBar } from "@/components/MainBar"
 import { Test } from "@/components/Test"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
     <MFeatures/>
     <MainBar/>
     <Test/>
+    <Footer/>
     </main>
   )
 }
