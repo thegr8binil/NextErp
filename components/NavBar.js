@@ -3,7 +3,7 @@ import Modal from "@/components/Modal";
 const navBar = () => {
   return (
     <main className="p-4 flex items-center justify-between text-sm sm:text-md md:text-xl max-w-12xl w-screen border-b border-slate-400">
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-1 pl-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="46"

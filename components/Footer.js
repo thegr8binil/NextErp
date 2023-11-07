@@ -2,7 +2,7 @@ import { Orb } from "@/app/layout";
 const footer = () => {
   return (
     <main>
-      <div className="flex items-center justify-center mt-8 w-screen ">
+      <div className="flex items-center justify-center mt-8 w-screen max-w-12xl">
       <div className="flex items-center gap-1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const footer = () => {
       <div className="w-full border-t-2 mt-4"></div>
       <div className="flex items-center justify-between flex-col sm:flex-row px-4 mt-8  pb-5">
         <div>
-          <h1>Privacy & Terms</h1>
+          <h1 className="">Privacy & Terms</h1>
         </div>
         <div>
           <h1>Copyright @ 2023 Nexteons</h1>
