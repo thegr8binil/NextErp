@@ -1,11 +1,66 @@
+"use client";
 import { Clash } from "@/app/layout";
+import { motion } from "framer-motion";
+const fadeInAnimationdelay = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+    },
+  },
+};
+const fadeInAnimation = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  },
+};
+const fadeInAnimationdelay1 = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.3,
+      ease: "easeInOut",
+    },
+  },
+};
 export const Test = () => {
   return (
     <mian className="mt-12 max-w-10xl">
       <div className="flex items-center justify-center flex-col">
         <div className="flex gap-2 items-center justify-center font-semibold">
-          <h1>Trusted By 2000+ Clients</h1>
-          <svg
+          <motion.h1
+            variants={fadeInAnimationdelay}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            Trusted By 2000+ Clients
+          </motion.h1>
+          <motion.svg
+            variants={fadeInAnimationdelay}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
             xmlns="http://www.w3.org/2000/svg"
             width="77"
             height="13"
@@ -33,15 +88,27 @@ export const Test = () => {
               d="M76.9759 4.70793C76.8903 4.44465 76.6568 4.25825 76.3816 4.23335L72.6283 3.8926L71.145 0.419814C71.0354 0.164672 70.7862 0 70.5089 0C70.2315 0 69.9822 0.164672 69.8734 0.419814L68.3901 3.8926L64.6362 4.23335C64.361 4.25875 64.128 4.44515 64.0418 4.70793C63.9562 4.9712 64.0353 5.25997 64.2434 5.4425L67.0806 7.93034L66.2441 11.6148C66.1829 11.8857 66.288 12.1659 66.5128 12.3284C66.6336 12.4162 66.7756 12.46 66.918 12.46C67.0405 12.46 67.163 12.4275 67.2724 12.362L70.5089 10.4268L73.7448 12.362C73.9822 12.5038 74.2807 12.4909 74.505 12.3284C74.7297 12.1659 74.8349 11.8857 74.7737 11.6148L73.9371 7.93034L76.7743 5.4425C76.9824 5.25997 77.0615 4.9718 76.9759 4.70793Z"
               fill="#5B7486"
             />
-          </svg>
+          </motion.svg>
         </div>
-        <h1
+        <motion.h1
           className={`${Clash.className} text-2xl sm:text-4xl mt-4 text-center pb-6`}
+          variants={fadeInAnimationdelay1}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
         >
           What Our <span className="bg-orange-100 p-1">Client</span> Think About
           Us?
-        </h1>
-    <img src="call.png" alt="test" className="max-w-8xl w-screen" />
+        </motion.h1>
+        <motion.img
+          variants={fadeInAnimationdelay1}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          src="call.png"
+          alt="test"
+          className="max-w-8xl w-screen"
+        />
       </div>
     </mian>
   );
