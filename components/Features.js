@@ -44,20 +44,6 @@ const fadeInAnimationdelay1 = {
     },
   },
 };
-const fadeInAnimationdelay2 = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1.2,
-      ease: "easeInOut",
-    },
-  },
-};
 const ScaleinAnimation = {
   initial: {
     opacity: 0,

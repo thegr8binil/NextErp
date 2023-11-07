@@ -1,4 +1,6 @@
+'use client'
 import { Clash } from "@/app/layout";
+import { motion } from "framer-motion";
 const MFeatures = () => {
   return (
     <div>
