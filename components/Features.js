@@ -66,7 +66,7 @@ export default function Features() {
           src="Group.png"
           alt="hero"
           className=" md:w-96 lg:w-1/2"
-          variants={ScaleinAnimation}
+          variants={fadeInAnimationdelay1}
           initial="initial"
           whileInView="animate"
           delay={1}
