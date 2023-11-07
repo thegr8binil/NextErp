@@ -1,6 +1,5 @@
 import { Orb } from "@/app/layout";
 import Modal from "@/components/Modal";
-import { Orbitron } from "next/font/google";
 const navBar = () => {
   return (
     <main className="p-4 flex items-center justify-between text-sm sm:text-md md:text-xl max-w-12xl w-screen border-b border-slate-400">
