@@ -1,17 +1,71 @@
+"use client";
 import { Clash } from "@/app/layout";
+import { motion } from "framer-motion";
+const fadeInAnimationdelay = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+    },
+  },
+};
+const fadeInAnimation = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  },
+};
+const fadeInAnimationdelay1 = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.3,
+      ease: "easeInOut",
+    },
+  },
+};
 export const MainBar = () => {
   return (
     <mian className="mt-8 max-w-10xl">
       <div className="flex items-center justify-center">
-        <h1
+        <motion.h1
+          variants={fadeInAnimation}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
           className={`${Clash.className} text-2xl sm:text-4xl mt-4 text-center pb-6 mb-4`}
         >
           NEXTERP Has The Ability To Serve <br />
           Any
           <span className="bg-orange-100 p-1">Business Segment</span>
-        </h1>
+        </motion.h1>
       </div>
-      <div className="flex flex-col gap-3 lg:flex-row lg:gap-0">
+      <motion.div
+        className="flex flex-col gap-3 lg:flex-row lg:gap-0"
+        variants={fadeInAnimationdelay}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
         <div className=" bg-white flex flex-1 flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row">
           <div className="flex gap-3  rounded-3xl mt-3">
             <img
@@ -65,8 +119,14 @@ export const MainBar = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-col gap-3 lg:flex-row lg:gap-0 mt-3">
+      </motion.div>
+      <motion.div
+        className="flex flex-col gap-3 lg:flex-row lg:gap-0 mt-3"
+        variants={fadeInAnimationdelay1}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
         <div className=" bg-white flex flex-col gap-2 items-center justify-between max-w-10xl px-5 rounded-2xl py-4 mx-4 sm:flex-row flex-1">
           <div className="flex gap-3 flex-1 rounded-3xl mt-3">
             <img
@@ -116,7 +176,7 @@ export const MainBar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </mian>
   );
 };
