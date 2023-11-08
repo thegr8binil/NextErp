@@ -33,8 +33,8 @@ const fadeInAnimation = {
 const MFeatures = () => {
   return (
     <div>
-      <main className="max-w-10xl flex flex-col-reverse gap-4 mt-24 px-5 items-center sm:flex-row xl:gap-48">
-        <div className="flex flex-col gap-3 max-w-xl">
+      <main className="flex flex-col-reverse items-center gap-4 px-5 mt-24 max-w-10xl sm:flex-row xl:gap-48">
+        <div className="flex flex-col max-w-xl gap-3">
           <motion.h1
             className={`${Clash.className} text-2xl sm:text-4xl mt-4`}
             variants={fadeInAnimation}
@@ -44,11 +44,11 @@ const MFeatures = () => {
             viewport={{ once: true }}
           >
             Manage Your Tasks <br />
-            <span className="bg-orange-100 p-1">Online</span>{" "}
+            <span className="p-1 bg-orange-100">Online</span>{" "}
             <span className="">Easily.</span>
           </motion.h1>
           <motion.p
-            className="text-slate-600 text-lg"
+            className="text-lg text-slate-600"
             variants={fadeInAnimationdelay}
             initial="initial"
             whileInView="animate"
@@ -71,8 +71,8 @@ const MFeatures = () => {
           <img src="a.png" alt="automation" className="" />
         </motion.div>
       </main>
-      <main className="max-w-10xl flex flex-col-reverse gap-4 mt-24 px-5 items-center sm:flex-row-reverse xl:gap-48">
-        <div className="flex flex-col gap-3 max-w-xl">
+      <main className="flex flex-col-reverse items-center gap-4 px-5 mt-24 max-w-10xl sm:flex-row-reverse xl:gap-48">
+        <div className="flex flex-col max-w-xl gap-3">
           <motion.h1
             className={`${Clash.className} text-2xl sm:text-4xl mt-4`}
             variants={fadeInAnimation}
@@ -81,11 +81,11 @@ const MFeatures = () => {
             delay={1}
             viewport={{ once: true }}
           >
-            <span className="bg-orange-100 p-1">Keep</span> Track Of All <br />{" "}
+            <span className="p-1 bg-orange-100">Keep</span> Track Of All <br />{" "}
             Your Financials.
           </motion.h1>
           <motion.p
-            className="text-slate-600 text-lg"
+            className="text-lg text-slate-600"
             variants={fadeInAnimationdelay}
             initial="initial"
             whileInView="animate"
@@ -107,8 +107,8 @@ const MFeatures = () => {
           <img src="s.png" alt="automation" className="" />
         </motion.div>
       </main>
-      <main className="max-w-10xl flex flex-col-reverse gap-4 mt-24 px-5 items-center sm:flex-row xl:gap-48">
-        <div className="flex flex-col gap-3 max-w-xl">
+      <main className="flex flex-col-reverse items-center gap-4 px-5 mt-24 max-w-10xl sm:flex-row xl:gap-48">
+        <div className="flex flex-col max-w-xl gap-3">
           <motion.h1
             className={`${Clash.className} text-2xl sm:text-4xl mt-4`}
             variants={fadeInAnimation}
@@ -117,11 +117,11 @@ const MFeatures = () => {
             delay={1}
             viewport={{ once: true }}
           >
-            More <span className="bg-orange-100 p-1">Connections,</span>
+            More <span className="p-1 bg-orange-100">Connections,</span>
             <br /> To Your Business
           </motion.h1>
           <motion.p
-            className="text-slate-600 text-lg "
+            className="text-lg text-slate-600 "
             variants={fadeInAnimationdelay}
             initial="initial"
             whileInView="animate"
