@@ -11,7 +11,7 @@ function Modal({ buttonText }) {
   const [companyName, setCompanyName] = useState("");
   const [email, setEmail] = useState("");
   const [mobileNo, setMobileNo] = useState("");
-  const [productName , setProductName] = useState("NextERP Demo")
+  const [productName, setProductName] = useState("NextERP Demo");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,26 +24,26 @@ function Modal({ buttonText }) {
     };
 
     try {
-      const response = await fetch('https://restaurentapi.nexteons.com/api/Enquiry/CreateEnquiry', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-  
+      const response = await fetch(
+        "https://restaurentapi.nexteons.com/api/Enquiry/CreateEnquiry",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
       if (response.ok) {
-        console.log("sucess")
+        console.log("sucess");
       } else {
-        console.log("failed")
+        console.log("failed");
       }
     } catch (error) {
-      console.log("try again",error)
+      console.log("try again", error);
     }
   };
-  
-
-  
 
   return (
     <main>
@@ -89,7 +89,11 @@ function Modal({ buttonText }) {
                 <h3 className="mb-4 text-xl font-medium text-gray-900">
                   NEXTERP Demo
                 </h3>
-                <form className="space-y-6" action="submit" onSubmit={handleSubmit}>
+                <form
+                  className="space-y-6"
+                  action="submit"
+                  onSubmit={handleSubmit}
+                >
                   <div>
                     <label
                       htmlFor="email"
@@ -165,7 +169,8 @@ function Modal({ buttonText }) {
 
                   <button
                     type="submit"
-                    className="w-full text-blue-50 bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-orange-400-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" onClick={toggleModal}
+                    className="w-full text-blue-50 bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-orange-400-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    onClick={toggleModal}
                   >
                     Get Our Demo
                   </button>

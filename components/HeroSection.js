@@ -111,12 +111,16 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-        <motion.img src="Person.png" alt="hero-bg" className="px-10 "
-         variants={ScaleinAnimation}
-         initial="initial"
-         whileInView="animate"
-         delay={1}
-         viewport={{ once: true }} />
+        <motion.img
+          src="Person.png"
+          alt="hero-bg"
+          className="px-10 "
+          variants={ScaleinAnimation}
+          initial="initial"
+          whileInView="animate"
+          delay={1}
+          viewport={{ once: true }}
+        />
         <motion.h1
           className={`${Clash.className} text-xl sm:text-3xl mt-4`}
           variants={fadeInAnimationdelay1}
